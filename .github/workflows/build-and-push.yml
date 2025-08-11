@@ -27,7 +27,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::092171113246:role/GitHubActions-ECR-Push-Role
           # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-          # Trocar pelo ARN da Role que você configurou na AWS para o GitHub Actions
+          # Trocar pelo ARN da Role que você configurou na AWS para o GitHub Actions.
           aws-region: us-east-1
           # ^^^^^^^^^^^^^^^^^^^
           # Trocar para a região onde seu ECR está hospedado
