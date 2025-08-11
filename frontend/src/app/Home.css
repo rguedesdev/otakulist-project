@@ -1,0 +1,20 @@
+main {
+  background-color: #0a1625;
+  margin-top: 100px;
+  max-width: 1200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+}
