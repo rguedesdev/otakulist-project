@@ -1,0 +1,78 @@
+.anime-banner {
+  /* margin-top: 70px; */
+  width: 100%;
+}
+
+.descption-container {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anime-cover {
+  position: relative;
+  top: -100px;
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.btn-add {
+  position: relative;
+  top: -80px;
+  width: 200px;
+  height: 40px;
+  background-color: darkturquoise;
+  border-radius: 5px;
+}
+
+.anime-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.anime-description {
+  margin-left: 20px;
+}
+
+.info-container {
+  width: 200px;
+  min-height: 600px;
+  margin-left: 327px;
+  margin-top: -60px;
+  background-color: crimson;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+aside h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.definition-term {
+  font-weight: bold;
+}
+
+.definition-description {
+  margin-bottom: 10px;
+}
+
+.hr-faded {
+  border: none; /* remove a borda padrão */
+  height: 1px; /* altura da linha */
+  background: linear-gradient(
+    to right,
+    transparent,
+    /* ponta esquerda */ #a7b3ca,
+    /* cor central */ transparent /* ponta direita */
+  );
+  margin: 20px 0;
+}

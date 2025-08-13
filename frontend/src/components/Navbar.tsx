@@ -2,13 +2,12 @@
 import Image from "next/image";
 
 // Style Sheet CSS
-import "./Navbar.css";
+import "./navbar.css";
 
 // Images
 import Kitsu from "../../public/kitsu.png";
 
 // Icons
-import { RiHome6Line } from "react-icons/ri";
 import { RiHome3Line } from "react-icons/ri";
 import { FiTv } from "react-icons/fi";
 import { BsBook } from "react-icons/bs";
@@ -69,11 +68,17 @@ function Navbar() {
         </li>
       </ul>
 
-      <input
-        type="search"
-        name="busca"
-        placeholder="Buscar por Anime, Mangá, e mais..."
-      />
+      <div className="btns-and-input">
+        <input
+          type="search"
+          name="busca"
+          placeholder="Buscar por Anime, Mangá, e mais..."
+        />
+
+        <button className="signin-btn">Entrar</button>
+
+        <button className="signup-btn">Cadastre-se</button>
+      </div>
     </nav>
   );
 }
