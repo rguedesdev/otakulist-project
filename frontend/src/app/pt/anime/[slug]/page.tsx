@@ -1,12 +1,15 @@
 // Imports Principais
 import Image from "next/image";
 
+// Style Sheet CSS
+import "./slug.css";
+
 // Images
 import OnePieceBanner from "../../../../../public/onepiece-banner.jpg";
 import OnePieceCover from "../../../../../public/onepiece-cover.jpg";
 
-// Style Sheet CSS
-import "./slug.css";
+// Components
+import { AnimeInfoComponent } from "@/components/AnimeInfo";
 
 function AnimeBySlug() {
   return (
@@ -57,49 +60,41 @@ function AnimeBySlug() {
           </p>
         </div>
       </div>
-      <aside className="info-container">
-        <h2>Títulos alternativos</h2>
-        <dl>
-          <dt className="definition-term">Japonês</dt>
-          <dd className="definition-description">ワンピース</dd>
-          <dt className="definition-term">Romaji</dt>
-          <dd className="definition-description">One Piece</dd>
-          <dt className="definition-term">Inglês</dt>
-          <dd className="definition-description">One Piece</dd>
-          <dt className="definition-term">Sinônimos</dt>
-          <dd className="definition-description">-</dd>
-        </dl>
-        <hr className="hr-faded" />
-        <h2>Infos</h2>
-        <dl>
-          <dt className="definition-term">Formato</dt>
-          <dd className="definition-description">TV</dd>
-          <dt className="definition-term">Episódios</dt>
-          <dd className="definition-description">26</dd>
-          <dt className="definition-term">Duração por episódio</dt>
-          <dd className="definition-description">23min</dd>
-          <dt className="definition-term">Status</dt>
-          <dd className="definition-description">Concluído</dd>
-          <dt className="definition-term">Data de início</dt>
-          <dd className="definition-description">12, Abr de 2025</dd>
-          <dt className="definition-term">Data de término</dt>
-          <dd className="definition-description">12, Abr de 2025</dd>
-          <dt className="definition-term">Temporada</dt>
-          <dd className="definition-description">Inverno de 2025</dd>
-          <dt className="definition-term">Estúdio</dt>
-          <dd className="definition-description">Sunrise</dd>
-          <dt className="definition-term">Produtores</dt>
-          <dd className="definition-description">Aniplex, Fuji TV</dd>
-          <dt className="definition-term">Fonte</dt>
-          <dd className="definition-description">Mangá</dd>
-          <dt className="definition-term">Genero</dt>
-          <dd className="definition-description">Ação, Fantasia</dd>
-          <dt className="definition-term">Demografia</dt>
-          <dd className="definition-description">Seinen</dd>
-          <dt className="definition-term">Rating</dt>
-          <dd className="definition-description">PG-13 - Teens 13 or older</dd>
-        </dl>
-      </aside>
+      <div className="general-content">
+        <div className="right-side-boxes">
+          <AnimeInfoComponent />
+          <div>Links Externos</div>
+          <div>Assista Online</div>
+          <div>Compre Online</div>
+        </div>
+        <div className="content-container">
+          <div className="season-container">
+            <h2 className="season-title">Temporadas</h2>
+            <div className="seasons-boxes">
+              <div className="season-box">
+                <div className="season-image">Imagem</div>
+                <div className="season-texts">
+                  <h1>1ª Temporada</h1>
+                  <h1>Subtítulo</h1>
+                  <h2>Episódios: 25</h2>
+                  <h2>Estúdio: Science Saru</h2>
+                  <h2>Season: Verão/2025</h2>
+                </div>
+              </div>
+              <div className="season-box">Season 2</div>
+              <div className="season-box">Season 3</div>
+            </div>
+          </div>
+          {/* <div className="character-container">
+            <h2>Personagens</h2>
+            <div>
+              <div>Luffy</div>
+              <div>Zoro</div>
+              <div>Nami</div>
+            </div>
+          </div> */}
+        </div>
+      </div>
     </main>
   );
 }
