@@ -1,7 +1,7 @@
 function Anime() {
   return (
     <div>
-      <h1>Mangás</h1>
+      <h1>Anime</h1>
     </div>
   );
 }
